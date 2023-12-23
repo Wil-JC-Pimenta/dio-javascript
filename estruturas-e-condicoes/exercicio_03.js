@@ -1,0 +1,26 @@
+/* VALOR DE UM PRODUTO PAGO - EXERCÍCIO 03
+
+#ELABORE UM ALGORITIMO QUE CALCULE O QUE DEVE SER PAGO POR UM PRODUTO, CONSIDERANDO O PREÇO NORMAL
+DE ETIQUETA E A ESCOLHA DA CONDIÇÃO DE PAGAMENTO.
+UTILIZE OS CÓDIGOS DA TABELA A SEGUIR PARA LER QUAL A CONDIÇÃO DE PAGAMENTO
+ESCOLHIDA E EFETUAR O CALCULO ADEQUADO.
+
+-> CÓDIGO DE CONDIÇÃO DE PAGAMENTO:
+- A VISTA DÉBITO , RECEBE 10% DE DESCONTO.
+- A VISTA DINHEIRO OU PIX, RECEBE 15% DE DESCONTO.
+- EM DUAS VEZES, PREÇO NORMAL DE ETIQUETA SEM JUROS.
+- ACIMA DE DUAS VEZES, PREÇO NORMAL DE ETIQUETA MAIS JUROS DE 10%.
+
+*/
+
+const precoEtiqueta = 100;
+const formaDePagamento = 4;
+if (formaDePagamento === 1){
+    console.log(precoEtiqueta - (precoEtiqueta * 0.1)); // RECEBE 10% DE DESCONTO.
+} else if (formaDePagamento === 2) {
+    console.log (precoEtiqueta - (precoEtiqueta * 0.15)); // RECEBE 15% DE DESCONTO.
+} else if (formaDePagamento === 3){
+    console.log(precoEtiqueta); //PREÇO NORMAL DE ETIQUETA SEM JUROS.
+} else {
+    console.log(precoEtiqueta + (precoEtiqueta * 0.1)); // PREÇO NORMAL DE ETIQUETA MAIS JUROS DE 10%.
+}
