@@ -10,7 +10,7 @@ function aplicarJuros (valor , juros){
 
 
 const precoEtiqueta = 100;
-const formaDePagamento = 4;
+const formaDePagamento = 4
 
 if(formaDePagamento ===1){
     console.log (aplicarDesconto(precoEtiqueta, 10));
